@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Clase 2</title>
+</head>
+<body>
+    <h1>Listado de Alumnos</h1>
+    <table border="1" width="100%">
+        <!--thead: títulos de la tabla-->
+        <thead>
+            <tr> <!--fila-->
+                <th align="center"> <!--título columna-->
+                    Nombre
+                </th>
+                <th align="center"> <!--título columna-->
+                    Apellido
+                </th>
+                <th align="center"> <!--título columna-->
+                    DNI
+                </th>
+                <th align="center"> <!--título columna-->
+                    Email
+                </th>
+                <th align="center"> <!--título columna-->
+                    Curso
+                </th>
+                <th align="center">
+                    Foto
+                </th>
+            </tr>            
+        </thead>
+        <tbody>
+            <tr> <!--fila-->
+                <tr> <!--fila-->
+                    <td>Lisa</td>
+                    <td>Simpson</td>
+                    <td>
+                        <a href="alumno.html">123456789</a></td>
+                    <td> lisasimpson@gmail.com</td>
+                    <td>python fullstack</td>
+                    <td width="15%"><img src="https://media.gcflearnfree.org/global/coding/html-basico/resources/img/perro-basquetbolista.png"
+                        width="100%"></td>
+                </tr>
+            </tr>
+            <tr> <!--fila-->
+                <td>Bart</td>
+                <td>Simpson</td>
+                <td><a href="alumno.html">12345678</a></td>
+                <td> bartsimpson@gmail.com</td>
+                <td>java fullstack</td>
+                <td width="15%"><img src="https://media.gcflearnfree.org/global/coding/html-basico/resources/img/perro-basquetbolista.png"
+                    width="100%"></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">
+                    Total
+                </td>
+                <td colspan="2">
+                    2
+                </td>
+                <td colspan="2">
+                    
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
