@@ -7,9 +7,68 @@
 </head>
 <body>
     <h1>Datos del Alumno</h1>
-    <form>
-        <label>Nombre</label>
-        <input type="text" id="nombre">
-    </form>
+        <fieldset>
+            <legend>Alumno</legend>
+            <form method="get">
+                <label for="nombre">Nombre</label>
+                <input type="text" 
+                    id="nombre"
+                    name="nombre"
+                    required>
+                <br>
+                <label for="apellido">Apellido</label>
+                <input type="text" 
+                    id="apellido"
+                    name="apellido"
+                    required>
+                <br>
+                <label for="dni">DNI</label>
+                <input type="text" 
+                    id="dni" 
+                    maxlength="8"
+                    name="dni"
+                    required>
+                <br>
+                <label for="email">Email</label>
+                <input type="text" 
+                    id="email" 
+                    name="email"
+                    required>
+                <br>
+                <label for="curso">Curso:</label>
+                <select id="curso" name="curso" required>
+                    <option>PHP</option>
+                    <option>Javascript</option>
+                    <option>Python</option>
+                    <option selected>Java</option>
+                </select>
+                <br>
+                <!--Radios-->
+                <label for="turno">Turno:</label>
+                <br>
+                <label for="maniana">Mañana</label>
+                <input type="radio" 
+                    id="maniana"
+                    name="turno"
+                    value="maniana"
+                    required> 
+                <label for="tarde">Tarde</label>
+                <input type="radio" 
+                    id="tarde"
+                    name="turno"
+                    value="tarde"
+                    required>
+                <label for="noche">Noche</label>
+                <input type="radio" 
+                    id="noche"
+                    name="turno"
+                    value="noche"
+                    required>
+                <br>
+                <button type="submit">Grabar</button>
+            </form>
+            <a href="tablas.html">Volver</a>
+        </fieldset>
+   
 </body>
 </html>
