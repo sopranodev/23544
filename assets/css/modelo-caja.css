@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+}
+
+.divContainer {
+background : #1a6fa1;
+color: black;
+font-size: 3em;
+/* margin-top: 5px;
+margin-left: 5px;
+margin-bottom: 5px;
+margin-right: 5px; */
+/* margin: 5px 5px 5px 5px; */
+/* margin: 5px 10px; arriba y abjajo el primero y izq y der el 2do*/
+/* margin: 5px; */
+padding: 0;
+margin: 0 auto;
+margin-bottom: 10px;
+margin-top: 10px;
+}
+
+.divItem {
+    text-align: center;
+    width: 100px;
+    background: #edea4a;  
+    padding: 5px;
+    /* border: 1px solid red;   */
+    border-style: solid;
+    border-width: 1px;
+    border-color: red;
+    box-sizing: border-box; /*border-box = ancho - el padding - el border*/
+    margin-top: 2px;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.caja1 {
+    background: green;
+}
+
+.caja2 {
+    background: burlywood;
+}
+
+/* pseudoclases */
+
+/* .textos p:first-child {
+    color: red;
+}
+
+p:last-child {
+    color: green;
+} */
+
+/* nth */
+/* .textos p:nth-child(3) {
+    color: blue;
+} */
+/* nth-child*indice */
+/* .textos p:nth-child(2n+2) {
+    color: blue;
+} */
+/* pintar pares */
+.textos p:nth-child(ever) {
+    color: red;
+}
+/* pintar impares */
+.textos p:nth-child(odd) {
+    color: blue;
+}
+
+a:link {
+    text-transform: lowercase;
+    text-decoration: none;
+    color: blue;
+    cursor: pointer;
+}
+
+a:active {
+    color: #1a6fa1;
+}
+
+a:visited {
+    color: aquamarine;
+}
+
+a:hover {
+    font-size: 1.1em;
+    color: #1a6fa1;
+}
+
+.micv {
+    width: 10%;
+}
+
+.micv:hover {
+    border-radius: 50%;
+}
+
+/* pseudoelementos */
+.parrafo {
+    color: #1a6fa1;
+}
+.parrafo::first-letter {
+    font-size: 2em;
+}
+.parrafo::before {
+    content: "/*";
+}
+.parrafo::selection {
+    color: #edea4a;
+}
+
+.parrafo::first-line {
+    font-weight: bold;
+}
